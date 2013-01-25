@@ -1,0 +1,58 @@
+﻿body
+{
+    font-family: Verdana, Arial, Helvetica;
+    font-size: 12px;
+}
+form
+{
+    width: 650px;
+}
+label
+{
+    display: inline-block;
+    margin-left: 25px;
+    vertical-align: middle;
+    width: 115px;
+}
+input[type="text"]
+{
+    margin: 5px;
+    width: 160px;
+}
+select
+{
+	margin: 5px;
+	width: 80px;
+}
+.center
+{
+    text-align: center;
+}
+.info
+{
+    color: #CC0000;
+    font-weight: bolder;
+}
+.validationSummary
+{
+    background: #FFFFD5;
+    border-color: #900;
+    border-style: solid;
+    border-width: 1px;
+    color: #900;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+.successMessage
+{
+	border: 1px solid #008000;
+	background-position: #FFFFD5;
+	background: #FFFFD5;
+	color: Green;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.note
+{
+    color: Red;
+}

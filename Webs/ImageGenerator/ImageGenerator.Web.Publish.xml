@@ -1,0 +1,11 @@
+<publishData>
+  <publishTarget publishUrl="C:\Documents and Settings\westovma\My Documents\Projects\B2BImageGenerator\">
+    <file relUrl="bin/ImageGenerator.pdb" publishTime="01/21/2011 14:51:40" />
+    <file relUrl="bin/Oracle.DataAccess.dll" publishTime="11/19/2010 01:40:26" />
+    <file relUrl="Default.aspx" publishTime="01/18/2011 11:35:45" />
+    <file relUrl="bin/ImageGenerator.dll" publishTime="01/21/2011 14:51:40" />
+    <file relUrl="bin/log4net.dll" publishTime="01/11/2011 16:47:40" />
+    <file relUrl="Web.config" publishTime="01/21/2011 14:32:57" />
+    <file relUrl="App_Themes/Default/main.css" publishTime="01/13/2011 13:10:17" />
+  </publishTarget>
+</publishData>

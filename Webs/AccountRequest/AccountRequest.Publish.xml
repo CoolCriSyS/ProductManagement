@@ -1,0 +1,16 @@
+<publishData>
+  <publishTarget publishUrl="C:\Users\westovma\Documents\Visual Studio 2008\Projects\AcctReg\">
+    <file relUrl="Styles/Styles.css" publishTime="12/17/2012 09:54:00" />
+    <file relUrl="Default.aspx" publishTime="12/17/2012 09:55:31" />
+    <file relUrl="bin/AccountRequest.dll" publishTime="01/09/2013 09:05:52" />
+    <file relUrl="Web.config" publishTime="12/17/2012 10:17:22" />
+    <file relUrl="bin/AccountRequest.pdb" publishTime="01/09/2013 09:05:52" />
+  </publishTarget>
+  <publishTarget publishUrl="C:\Documents and Settings\westovma\My Documents\Projects\AccountRegistration\">
+    <file relUrl="Styles/Styles.css" publishTime="03/02/2012 10:36:03" />
+    <file relUrl="Default.aspx" publishTime="03/09/2012 09:49:54" />
+    <file relUrl="bin/AccountRequest.dll" publishTime="03/02/2012 14:47:04" />
+    <file relUrl="Web.config" publishTime="03/02/2012 14:22:04" />
+    <file relUrl="bin/AccountRequest.pdb" publishTime="03/02/2012 14:47:04" />
+  </publishTarget>
+</publishData>

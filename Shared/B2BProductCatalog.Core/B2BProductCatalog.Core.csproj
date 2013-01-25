@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0244E650-2701-4C3A-848A-3E7E87C918C9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>B2BProductCatalog.Core</RootNamespace>
+    <AssemblyName>B2BProductCatalog.Core</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentNHibernate, Version=1.1.0.685, Culture=neutral, PublicKeyToken=8aa435e3cb308880, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\fluentnhibernate-1.1\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\fluentnhibernate-1.1\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\fluentnhibernate-1.1\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\B2BExtract.cs" />
+    <Compile Include="Entities\Brand.cs" />
+    <Compile Include="Entities\Brand_Locale.cs" />
+    <Compile Include="Entities\FlagCategory.cs" />
+    <Compile Include="Entities\FlagCategory_Locale.cs" />
+    <Compile Include="Entities\Flag.cs" />
+    <Compile Include="Entities\Flag_Locale.cs" />
+    <Compile Include="Entities\Locale.cs" />
+    <Compile Include="Entities\Navigation.cs" />
+    <Compile Include="Entities\Navigation_Locale.cs" />
+    <Compile Include="Entities\Pattern.cs" />
+    <Compile Include="Entities\Pattern_Locale.cs" />
+    <Compile Include="Entities\Style.cs" />
+    <Compile Include="Entities\Style_Locale.cs" />
+    <Compile Include="Mappings\B2BExtractMap.cs" />
+    <Compile Include="Mappings\NavigationMap.cs" />
+    <Compile Include="Mappings\Navigation_LocaleMap.cs" />
+    <Compile Include="Mappings\StyleMap.cs" />
+    <Compile Include="Mappings\Style_LocaleMap.cs" />
+    <Compile Include="Repositories\BrandRepository.cs" />
+    <Compile Include="Repositories\FlagRepository.cs" />
+    <Compile Include="Mappings\UserMap.cs" />
+    <Compile Include="NHProvider.cs" />
+    <Compile Include="Repositories\PatternRepository.cs" />
+    <Compile Include="NHibernateSessionFactory.cs" />
+    <Compile Include="Mappings\BrandMap.cs" />
+    <Compile Include="Mappings\Brand_LocaleMap.cs" />
+    <Compile Include="Mappings\FlagCategoryMap.cs" />
+    <Compile Include="Mappings\FlagCategory_LocaleMap.cs" />
+    <Compile Include="Mappings\FlagMap.cs" />
+    <Compile Include="Mappings\Flag_LocaleMap.cs" />
+    <Compile Include="Mappings\LocaleMap.cs" />
+    <Compile Include="Mappings\PatternMap.cs" />
+    <Compile Include="Mappings\Pattern_LocaleMap.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Entities\User.cs" />
+    <Compile Include="Repositories\UserRepository.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

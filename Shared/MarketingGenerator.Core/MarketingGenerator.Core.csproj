@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5C7A72C6-ED80-4C0C-9A55-3C6F7CCD29C5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MarketingGenerator.Core</RootNamespace>
+    <AssemblyName>MarketingGenerator.Core</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=2.112.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DbObjects\B2BProductCatalog.cs" />
+    <Compile Include="DbObjects\B2BProductCatalog_Base.cs" />
+    <Compile Include="DbObjects\B2CProductDataCollection.cs" />
+    <Compile Include="DbObjects\B2CProductDataCollection_Base.cs" />
+    <Compile Include="DbObjects\B2CProductDataRow.cs" />
+    <Compile Include="DbObjects\B2CProductDataRow_Base.cs" />
+    <Compile Include="DbObjects\BrandCollection.cs" />
+    <Compile Include="DbObjects\BrandCollection_Base.cs" />
+    <Compile Include="DbObjects\BrandRow.cs" />
+    <Compile Include="DbObjects\BrandRow_Base.cs" />
+    <Compile Include="DbObjects\SAPFileCheckCollection.cs" />
+    <Compile Include="DbObjects\SAPFileCheckCollection_Base.cs" />
+    <Compile Include="DbObjects\SAPFileCheckRow.cs" />
+    <Compile Include="DbObjects\SAPFileCheckRow_Base.cs" />
+    <Compile Include="DbObjects\FlagCategoryCollection.cs" />
+    <Compile Include="DbObjects\FlagCategoryCollection_Base.cs" />
+    <Compile Include="DbObjects\FlagCategoryRow.cs" />
+    <Compile Include="DbObjects\FlagCategoryRow_Base.cs" />
+    <Compile Include="DbObjects\FlagCategory_BackupCollection.cs" />
+    <Compile Include="DbObjects\FlagCategory_BackupCollection_Base.cs" />
+    <Compile Include="DbObjects\FlagCategory_BackupRow.cs" />
+    <Compile Include="DbObjects\FlagCategory_BackupRow_Base.cs" />
+    <Compile Include="DbObjects\FlagCategory_ExceptionsCollection.cs" />
+    <Compile Include="DbObjects\FlagCategory_ExceptionsCollection_Base.cs" />
+    <Compile Include="DbObjects\FlagCategory_ExceptionsRow.cs" />
+    <Compile Include="DbObjects\FlagCategory_ExceptionsRow_Base.cs" />
+    <Compile Include="DbObjects\FlagInfoCollection.cs" />
+    <Compile Include="DbObjects\FlagInfoCollection_Base.cs" />
+    <Compile Include="DbObjects\FlagInfoRow.cs" />
+    <Compile Include="DbObjects\FlagInfoRow_Base.cs" />
+    <Compile Include="DbObjects\FlagInfo_BackupCollection.cs" />
+    <Compile Include="DbObjects\FlagInfo_BackupCollection_Base.cs" />
+    <Compile Include="DbObjects\FlagInfo_BackupRow.cs" />
+    <Compile Include="DbObjects\FlagInfo_BackupRow_Base.cs" />
+    <Compile Include="DbObjects\FlagInfo_ExceptionsCollection.cs" />
+    <Compile Include="DbObjects\FlagInfo_ExceptionsCollection_Base.cs" />
+    <Compile Include="DbObjects\FlagInfo_ExceptionsRow.cs" />
+    <Compile Include="DbObjects\FlagInfo_ExceptionsRow_Base.cs" />
+    <Compile Include="DbObjects\ImageDataCollection.cs" />
+    <Compile Include="DbObjects\ImageDataCollection_Base.cs" />
+    <Compile Include="DbObjects\ImageDataRow.cs" />
+    <Compile Include="DbObjects\ImageDataRow_Base.cs" />
+    <Compile Include="DbObjects\MarketingInfoCollection.cs" />
+    <Compile Include="DbObjects\MarketingInfoRow.cs" />
+    <Compile Include="DbObjects\MarketingInfoRow_Base.cs" />
+    <Compile Include="DbObjects\MarketingInfoCollection_Base.cs" />
+    <Compile Include="DbObjects\MarketingInfo_BackupCollection.cs" />
+    <Compile Include="DbObjects\MarketingInfo_BackupCollection_Base.cs" />
+    <Compile Include="DbObjects\MarketingInfo_BackupRow.cs" />
+    <Compile Include="DbObjects\MarketingInfo_BackupRow_Base.cs" />
+    <Compile Include="DbObjects\MarketingInfo_ExceptionsCollection.cs" />
+    <Compile Include="DbObjects\MarketingInfo_ExceptionsCollection_Base.cs" />
+    <Compile Include="DbObjects\MarketingInfo_ExceptionsRow.cs" />
+    <Compile Include="DbObjects\MarketingInfo_ExceptionsRow_Base.cs" />
+    <Compile Include="Generator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

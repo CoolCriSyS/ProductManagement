@@ -1,0 +1,7 @@
+﻿INSERT INTO [B2BProductCatalog].[dbo].[HelperLoremIpsum]
+           ([MarketingFakeEn]
+           ,[MarketingFakeFr])
+     VALUES
+           ('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in suscipit lorem. Aliquam facilisis, mauris at ornare convallis, urna libero iaculis dui, et mattis urna risus consequat ligula. Nam vestibulum magna et leo pulvinar fringilla. Ut placerat aliquet metus, et consectetur urna malesuada quis. Ut scelerisque arcu ut sapien aliquet at molestie arcu rutrum. Nulla facilisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent placerat, metus vel viverra iaculis, risus ante sollicitudin sapien, id aliquam ligula mauris vulputate nisl. Fusce accumsan vehicula imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempus dolor ac est condimentum vel lobortis lacus faucibus. Phasellus vulputate sem sed sem aliquam imperdiet eget ut eros. Sed dapibus massa ligula.'
+           ,'Duis pulvinar nisi sollicitudin lorem consectetur auctor. Quisque volutpat mollis tempus. Vivamus et orci in orci pharetra varius in vel mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis tincidunt massa eu venenatis. Donec et sapien ut leo pharetra fermentum vitae nec ipsum. Integer libero orci, rhoncus sed molestie id, vulputate id nulla. Ut lacus dolor, elementum nec vulputate ut, gravida ac lacus. Curabitur et facilisis est. Nam eget eros ligula. Etiam metus nisl, lobortis non ornare et, malesuada ut nibh.')
+GO

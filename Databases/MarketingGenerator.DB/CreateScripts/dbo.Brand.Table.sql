@@ -1,0 +1,39 @@
+﻿USE [B2BProductCatalog]
+GO
+
+/****** Object:  Table [dbo].[Brand]    Script Date: 01/26/2011 13:54:47 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[Brand](
+	[PkID] [int] IDENTITY(1,1) NOT NULL,
+	[BrandName] [nvarchar](50) NOT NULL,
+	[B2CBrandName] [nvarchar](50) NULL,
+	[SalesOrg] [varchar](4) NOT NULL,
+	[DC] [varchar](2) NOT NULL,
+ CONSTRAINT [PK_Brand] PRIMARY KEY CLUSTERED 
+(
+	[BrandName] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+
+USE [B2BProductCatalog]
+/****** Object:  Index [IX_Brand]    Script Date: 01/26/2011 13:54:47 ******/
+CREATE NONCLUSTERED INDEX [IX_Brand] ON [dbo].[Brand] 
+(
+	[SalesOrg] ASC,
+	[DC] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+GO

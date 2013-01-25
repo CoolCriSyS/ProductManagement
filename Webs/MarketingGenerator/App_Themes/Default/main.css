@@ -1,0 +1,51 @@
+﻿body
+{
+	font-family:Arial,Helvetica,Verdana,sans-serif;
+	width: 50%;
+}
+
+fieldset, div, p, input[type="submit"]
+{
+	margin: 5px;
+}
+
+p
+{
+	font-size: 70%;
+}
+
+label
+{
+	display: inline-block;
+	font-size: smaller;
+}
+
+select
+{
+	width: 80px;
+}
+
+.success, .error
+{
+	font-size: 80%;
+}
+
+.error
+{
+	color: #FF0000;
+}
+
+.success
+{
+	color: #009900;
+}
+
+.alignTop
+{
+	vertical-align: top;
+}
+
+.legendDefault
+{
+
+}

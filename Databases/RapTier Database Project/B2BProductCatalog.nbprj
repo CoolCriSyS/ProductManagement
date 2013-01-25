@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project SchemaVersion="1" ProjectGuid="{FCC333B6-0789-4f40-A43B-851DB236E860}">
+  <Database CodeName="B2BProductCatalog" Schema="dbo">
+    <Connection>Provider=SQLOLEDB.1;Password=password;Persist Security Info=True;User ID=B2BProductCatalogUser;Initial Catalog=B2BProductCatalog;Data Source=ROCSQT01</Connection>
+    <Properties>
+      <Property Name="generatesqlidentity" Value="True" />
+      <Property Name="dbengine" Value="MSSQL" />
+      <Property Name="generatewinui" Value="False" />
+      <Property Name="generatestoredprocedures" Value="False" />
+      <Property Name="webuitiernamespace" Value="B2BProductCatalogApp.WebUI.Core.DbObjects" />
+      <Property Name="dbtiernamespace" Value="MarketingGenerator.Core.DbObjects" />
+      <Property Name="templateid" Value="TwoLKit.StandardCSharp" />
+      <Property Name="baseoutputdirectory" Value="C:\SvnRoot\B2BHelperTools_Repo\trunk\Databases\RapTier Database Project\GeneratedCode" />
+      <Property Name="winuitiernamespace" Value="B2BProductCatalogApp.WinUI.Core.DbObjects" />
+      <Property Name="generateoldnewdirs" Value="True" />
+      <Property Name="targetide" Value="VSNET2003" />
+      <Property Name="copyright" Value="All rights reserved." />
+    </Properties>
+  </Database>
+</Project>
